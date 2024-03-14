@@ -20,6 +20,7 @@ footer {
   background: #1f2937;
   flex-direction: row;
   justify-content: space-around;
+  padding-bottom: 60px;
 }
 
 .header-logo {
@@ -35,4 +36,50 @@ footer {
   font-size: 18px;
   display: flex;
   gap: 30px;
+}
+
+.main-text {
+  font-size: 48px;
+  font-weight: bold;
+  color: #f9faf8;
+}
+
+.header-container {
+  background: #1f2937;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 210px;
+  padding-right: 210px;
+  padding-bottom: 100px;
+}
+
+.sub-text {
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.header-image-container {
+  background-color: gray;
+}
+
+.header-image {
+  color: #e5e7eb;
+  text-align: center;
+  padding: 100px;
+}
+
+.sign-up-container {
+  background-color: #3882f6;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100px;
+  max-height: 40px;
+  border-radius: 10px;
+}
+
+.sign-up {
+  color: #e5e7eb;
 }
