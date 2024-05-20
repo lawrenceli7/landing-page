@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+}
+
 footer {
   bottom: 0;
   width: 100%;
@@ -16,67 +20,72 @@ footer {
 
 .nav-container {
   display: flex;
-  background: #1f2937;
   flex-direction: row;
-  justify-content: space-around;
-  padding-bottom: 60px;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f2937;
+  padding: 10px 20px;
 }
 
 .header-logo {
   font-size: 24px;
   color: #f9faf8;
   font-weight: bold;
-  margin-top: 10px;
 }
 
 .header-link {
-  color: #e5e7eb;
-  margin: 10px;
-  font-size: 18px;
   display: flex;
-  gap: 30px;
+  gap: 15px;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .header-link {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #1f2937;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 
 .main-text {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: bold;
   color: #f9faf8;
 }
 
-.header-container {
-  background: #1f2937;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-left: 210px;
-  padding-right: 210px;
-  padding-bottom: 100px;
-}
-
 .sub-text {
   color: #e5e7eb;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .header-image-container {
   background-color: gray;
+  text-align: center;
+  padding: 50px;
 }
 
 .header-image {
   color: #e5e7eb;
-  text-align: center;
-  padding: 100px;
 }
 
 .sign-up-container {
   background-color: #3882f6;
-  padding: 15px;
+  padding: 10px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100px;
-  max-height: 40px;
   border-radius: 10px;
+  margin-top: 10px;
 }
 
 .sign-up {
@@ -87,31 +96,16 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
+  padding: 20px;
 }
 
 .sub-text-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  gap: 20px;
-}
-
-.random-info {
-  padding: 30px;
-}
-
-.sub-image {
-  background-color: white;
-  padding: 70px;
-  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  max-width: 100px;
-  max-height: 700px;
-  border-radius: 10px;
-  border: 2px solid #3882f6;
-  margin-bottom: 5px;
+  gap: 20px;
 }
 
 .sub-info {
@@ -119,15 +113,28 @@ footer {
   flex-direction: column;
   align-items: center;
   color: #8f959e;
+  max-width: 200px;
+}
+
+.sub-image {
+  background-color: white;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid #3882f6;
+  margin-bottom: 5px;
 }
 
 .quote-container {
   background-color: #e5e7eb;
-  padding: 200px;
+  padding: 50px;
+  text-align: center;
 }
 
 .quote-text {
-  font-size: 36px;
+  font-size: 24px;
   font-style: italic;
   font-weight: lighter;
   color: #1f2937;
@@ -135,45 +142,112 @@ footer {
 
 .quote-author {
   text-align: right;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
-}
-
-.button-container {
-  background-color: #3882f6;
-  padding: 90px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
 
 .button-background {
   background-color: white;
-  padding: 100px;
+  padding: 50px;
+  text-align: center;
+}
+
+.button-container {
+  background-color: #3882f6;
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .call-to-action-text {
   font-weight: bold;
   color: #f9faf8;
-  font-size: 30px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .sign-up-text {
   color: #e5e7eb;
-  font-size: 18px;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .sign-up-button {
   font-weight: bold;
   color: #f9faf8;
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 10px;
   background-color: #3882f6;
   border: 2px solid white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 10px 20px;
+}
+
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .main-text {
+    font-size: 24px;
+  }
+
+  .sub-text {
+    font-size: 14px;
+  }
+
+  .header-image-container {
+    padding: 20px;
+  }
+
+  .random-info-container {
+    margin-bottom: 20px;
+  }
+
+  .sub-text-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sub-info {
+    max-width: 100%;
+  }
+
+  .quote-container {
+    padding: 20px;
+  }
+
+  .quote-text {
+    font-size: 18px;
+  }
+
+  .quote-author {
+    font-size: 14px;
+  }
+
+  .button-background {
+    padding: 20px;
+  }
+
+  .button-container {
+    padding: 20px;
+  }
+
+  .call-to-action-text {
+    font-size: 18px;
+  }
+
+  .sign-up-text {
+    font-size: 14px;
+  }
+
+  .sign-up-button {
+    font-size: 16px;
+  }
+
+  .sign-up-container {
+    margin-bottom: 10px;
+  }
 }
